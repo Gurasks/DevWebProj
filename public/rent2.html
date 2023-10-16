@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ba83f15944.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"><i class="fa-solid fa-bed brand-white"></i> GroundBnB</a>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" id="search" type="search" placeholder="Local?" aria-label="Search">
+                <button class="btn btn-outline-secondary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container fs-3">
+        <div class="row">
+            <div class="col">
+                <div class="content-spacing">
+                    <span class="title fs-1 brand-black">Casa do Bambi</span>
+                </div>
+
+                <div class="cropped-rent">
+                    <img class="searching-img rounded-2" src="assets/images/deer.jpg" alt="Deer room">
+                </div>
+                <div class="cropped-rent">
+                    <img class="searching-img rounded-2" src="assets/images/cozy.jpg" alt="Cozy living room">
+                </div>
+                <div class="cropped-rent">
+                    <img class="searching-img rounded-2" src="assets/images/NY.jpg" alt="NYC">
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col col-8">
+                <span class="title brand-black">Espaço inteiro: casa (hospedado por Yago)</span>
+                <span class="brand-gray">• 3 hóspedes</span>
+                <span class="brand-gray">• 1 quarto</span>
+                <span class="brand-gray">• 1 cama</span>
+                <span class="brand-gray">• 1 banheiro</span>
+                <hr class="brand-gray">
+                <span>Bacon ipsum dolor amet pastrami drumstick landjaeger andouille ball tip. Venison strip steak ball tip short ribs hamburger tri-tip. Swine pig filet mignon bresaola cupim. Tail brisket drumstick pig. Cow pancetta meatloaf, tenderloin meatball prosciutto chuck capicola pork loin cupim tongue.
+
+                    Drumstick shoulder ribeye prosciutto pancetta pig sirloin ball tip fatback sausage pastrami venison chicken. Landjaeger meatloaf chicken, venison bacon tongue frankfurter pork belly burgdoggen brisket chuck tenderloin shankle spare ribs buffalo. Strip steak brisket filet mignon pork chop short ribs. Pork andouille pork loin cow corned beef pork belly.</span>
+            </div>
+            <div class="col-4">
+                <form>
+                    <div class="input-group mb-2">
+                        <span class="input-group-text" id="checkin">Check-In</span>
+                        <input id="checkin-date" type="date" class="form-control" aria-label="Check-In input" aria-describedby="CheckIn">
+                    </div>
+                    <div class="input-group mb-2">
+                        <span class="input-group-text" id="checkout">Checkout</span>
+                        <input id="checkout-date" type="date" class="form-control" aria-label="Checkout input" aria-describedby="Checkout">
+                    </div>
+
+                    <div class="input-group mb-2">
+                        <span class="input-group-text" id="hospedes">Hóspedes</span>
+                        <input id="guests" type="number" class="form-control" aria-label="Hóspedes input" aria-describedby="Hóspedes">
+                    </div>
+                    <button type="submit" class="btn btn-danger float-end">Reservar</button>
+                </form>
+            </div>
+        </div>
+      </div>
+
+    <!-- <script src="assets/js/bootstrap.bundle.min.js"></script> -->
+</body>
+</html>

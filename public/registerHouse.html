@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resgistro de residencia</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ba83f15944.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"><i class="fa-solid fa-bed brand-white"></i> GroundBnB</a>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" id="search" type="search" placeholder="Local?" aria-label="Search">
+                <button class="btn btn-outline-secondary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <form>
+                    <div class="input-group mb-2">
+                        <span class="input-group-text" id="name">Nome da residencia</span>
+                        <input id="houseName" type="text" class="form-control" aria-label="Nome da residencia input" aria-describedby="name">
+                    </div>
+                    <div class="input-group mb-2">
+                        <span class="input-group-text" id="address">Endereco</span>
+                        <input id="houseAddress" type="text" class="form-control" aria-label="Endereco input" aria-describedby="Endereco">
+                    </div>
+                    <div class="input-group mb-2">
+                        <span class="input-group-text" id="numRooms">Numero de quartos</span>
+                        <input id="houseBedrooms" type="number" class="form-control" aria-label="Numero de quartos input" aria-describedby="numero-quartos">
+                    </div>
+                    <div class="input-group mb-2">
+                        <span class="input-group-text" id="numBathrooms">Numero de banheiros</span>
+                        <input id="houseBathrooms" type="number" class="form-control" aria-label="Numero de banheiros input" aria-describedby="numero-banheiros">
+                    </div>
+                    <div class="input-group mb-2">
+                        <span class="input-group-text" id="numBeds">Numero de camas</span>
+                        <input id="houseBeds" type="number" class="form-control" aria-label="Numero de camas input" aria-describedby="numero-camas">
+                    </div>
+                    <div class="input-group mb-2">
+                        <span class="input-group-text" id="description">Descricacao</span>
+                        <textarea id="houseDescription"rows="3" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-danger float-end">Submit</button>
+                  </form>
+            </div>
+        </div>
+      </div>
+
+    <!-- <script src="assets/js/bootstrap.bundle.min.js"></script> -->
+</body>
+</html>
