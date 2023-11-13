@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="fs-6 bg-light">
+
+  <%- include('../partials/navbar'); %>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="content-spacing">
+                    <span class="title brand-black"><%= property.title %></span>
+                </div>
+
+                <div class="cropped-rent">
+                    <img class="searching-img rounded-2" src="<%= property.mainPhoto %>" alt="Deer room">
+                </div>
+                <div class="cropped-rent">
+                    <img class="searching-img rounded-2" src="<%= property.photos[0] %>" alt="Cozy living room">
+                </div>
+                <div class="cropped-rent">
+                    <img class="searching-img rounded-2" src="<%= property.photos[1] %>" alt="NYC">
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col col-8">
+                <span class="title brand-black"><%= property.propertyType %> (hospedado por <%= property.owner %>)</span>
+                <span class="brand-gray">• <%= property.maxGuests %> hóspedes</span>
+                <span class="brand-gray">• <%= property.numRooms %> quarto</span>
+                <span class="brand-gray">• <%= property.numBeds %> cama</span>
+                <span class="brand-gray">• <%= property.numBathrooms %> banheiro</span>
+                <hr class="brand-gray">
+                <span class="brand-black"><%= property.description %></span>
+            </div>
+            <div class="col-4">
+                <form>
+                    <div class="input-group mb-2">
+                        <span class="input-group-text" id="checkin">Check-In</span>
+                        <input id="checkin-date" type="date" class="form-control" aria-label="Check-In input" aria-describedby="CheckIn">
+                    </div>
+                    <div class="input-group mb-2">
+                        <span class="input-group-text" id="checkout">Checkout</span>
+                        <input id="checkout-date" type="date" class="form-control" aria-label="Checkout input" aria-describedby="Checkout">
+                    </div>
+
+                    <div class="input-group mb-2">
+                        <span class="input-group-text" id="hospedes">Hóspedes</span>
+                        <input id="guests" type="number" class="form-control" aria-label="Hóspedes input" aria-describedby="Hóspedes">
+                    </div>
+                    <div>
+                        <span class="fs-4 align-bottom brand-black">Diária R$<%= property.rentPrice %>,00</span>
+                        <button type="submit" class="btn btn-danger float-end">Reservar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <%- include('../partials/footer'); %>
+</body>
+</html>

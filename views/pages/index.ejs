@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="bg-light">
+
+  <%- include('../partials/navbar'); %>
+
+    <div class="container text-center">
+        <% for(let i=0; i<prop.length; i=i+3) {%>
+          <div class="row">
+              <% for(let j=i; j<i+3; j++) {%>
+                <div class="col">
+                  <a href="./rent?id=<%= j %>">
+                      <div class="cropped">
+                          <img class="searching-img rounded-2" src=<%= prop[j].mainPhoto %>>
+                      </div>
+                      <div class="info-spacing">
+                          <div class="location-rating">
+                              <span class="location brand-black"><%= prop[j].location %></span>
+                              <span class="rating"><%= prop[j].ratingAvg %> <i class="fa-solid fa-star"></i></span>
+                          </div>
+                          <span class="info brand-gray"><%= prop[j].reference %></span>
+                          <span class="price brand-black">Diária R$<%= prop[j].rentPrice %>,00</span>
+                      </div>
+                    </a>
+                  </div>
+              <% } %>
+          </div>
+      <% } %>
+    </div>
+    <%- include('../partials/footer'); %>
+</body>
+</html>
