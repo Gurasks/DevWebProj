@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="fs-6 bg-light">
+
+  <%- include('../partials/navbar'); %>
+
+    <div class="container">
+        <form>
+            <div class="form-group">
+              <label for="userInput">Usuario</label>
+              <input type="text" class="form-control" id="userInput" aria-describedby="userHelp" placeholder="Nome">
+            </div>
+            <div class="form-group">
+              <label for="passwordInput">Senha</label>
+              <input type="password" class="form-control" id="passwordInput" placeholder="Senha">
+            </div>
+            <button id="login" class="btn btn-primary">Entrar</button>
+            <button id="register" class="btn btn-secondary">Cadastrar</button>
+          </form>
+    </div>
+    <%- include('../partials/footer'); %>
+    <script src="assets/js/login.js"></script>
+</body>
+</html>

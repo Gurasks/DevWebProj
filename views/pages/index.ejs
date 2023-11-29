@@ -12,7 +12,7 @@
           <div class="row">
               <% for(let j=i; j<i+3; j++) {%>
                 <div class="col">
-                  <a href="./rent?id=<%= j %>">
+                  <a id="rent-<%= j %>" href="./rent?id=<%= j %>">
                       <div class="cropped">
                           <img class="searching-img rounded-2" src=<%= prop[j].mainPhoto %>>
                       </div>
@@ -29,7 +29,23 @@
               <% } %>
           </div>
       <% } %>
+      <% if(maxPage > 1) {%>
+      <div class="d-flex justify-content-center">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li id="prev" class="page-item page-link brand-white bg-dark d-none"><</li>
+            <li id="next" class="page-item page-link brand-white bg-dark">></li>
+          </ul>
+        </nav>
+      </div>
+      <% } %>
     </div>
+
+
     <%- include('../partials/footer'); %>
+    <script>
+      const maxPage = <%- JSON.stringify(maxPage) %>
+    </script>
+    <script src="assets/js/pagination.js"></script>
 </body>
 </html>

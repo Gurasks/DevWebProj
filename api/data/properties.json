@@ -12,11 +12,6 @@
         "numBathrooms": 1,
         "description": "Casa chic para pessoas chics",
         "ratingAvg": 4.5,
-        "rating1": 0,
-        "rating2": 0,
-        "rating3": 0,
-        "rating4": 1,
-        "rating5": 1,
         "rentPrice": 260,
         "propertyType": "Casa"
     },
@@ -33,11 +28,6 @@
         "numBathrooms": 1,
         "description": "Casa chic para pessoas chics",
         "ratingAvg": 4.5,
-        "rating1": 0,
-        "rating2": 0,
-        "rating3": 0,
-        "rating4": 1,
-        "rating5": 1,
         "rentPrice": 140
     },
     {
@@ -52,12 +42,7 @@
         "numRooms": 1,
         "numBathrooms": 1,
         "description": "Casa chic para pessoas chics",
-        "ratingAvg": 4.5,
-        "rating1": 0,
-        "rating2": 0,
-        "rating3": 0,
-        "rating4": 1,
-        "rating5": 1,
+        "ratingAvg": 4.8,
         "rentPrice": 80
     },
     {
@@ -72,12 +57,7 @@
         "numRooms": 1,
         "numBathrooms": 1,
         "description": "Casa chic para pessoas chics",
-        "ratingAvg": 4.5,
-        "rating1": 0,
-        "rating2": 0,
-        "rating3": 0,
-        "rating4": 1,
-        "rating5": 1,
+        "ratingAvg": 4.8,
         "rentPrice": 360
     },
     {
@@ -93,11 +73,6 @@
         "numBathrooms": 5,
         "description": "Casa chic para pessoas chics",
         "ratingAvg": 4.5,
-        "rating1": 0,
-        "rating2": 0,
-        "rating3": 0,
-        "rating4": 1,
-        "rating5": 1,
         "rentPrice": 190
     },
     {
@@ -113,11 +88,6 @@
         "numBathrooms": 3,
         "description": "Casa chic para pessoas chics",
         "ratingAvg": 4.5,
-        "rating1": 0,
-        "rating2": 0,
-        "rating3": 0,
-        "rating4": 1,
-        "rating5": 1,
         "rentPrice": 570
     }
 ]}
