@@ -12,7 +12,7 @@
           <div class="row">
               <% for(let j=i; j<i+3; j++) {%>
                 <div class="col">
-                  <a id="rent-<%= j %>" href="./rent?id=<%= j %>">
+                  <a id="rent-<%= j %>" href="./rent?id=<%= prop[j].id %>">
                       <div class="cropped">
                           <img class="searching-img rounded-2" src=<%= prop[j].mainPhoto %>>
                       </div>
@@ -22,7 +22,7 @@
                               <span class="rating"><%= prop[j].ratingAvg %> <i class="fa-solid fa-star"></i></span>
                           </div>
                           <span class="info brand-gray"><%= prop[j].reference %></span>
-                          <span class="price brand-black">Diária R$<%= prop[j].rentPrice %>,00</span>
+                          <span class="price brand-black">Diária R$<%= prop[j].price %>,00</span>
                       </div>
                     </a>
                   </div>

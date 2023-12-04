@@ -21,15 +21,15 @@ async function nextPage() {
     currentPage++;
     fetch("./props?id="+currentPage).then(res =>
         res.json()).then(data => {
-            changePropInfo(rent0, data.prop[0], 3*(currentPage-1));
-            if (data.prop[1]) changePropInfo(rent1, data.prop[1], 3*(currentPage-1) + 1);
-            if (data.prop[2]) changePropInfo(rent2, data.prop[2], 3*(currentPage-1) + 2);
+            changePropInfo(rent0, data.prop[0]);
+            if (data.prop[1]) changePropInfo(rent1, data.prop[1]);
+            if (data.prop[2]) changePropInfo(rent2, data.prop[2]);
         })
     changeButtonVisibilities(currentPage);
 }
 
-function changePropInfo (el, prop, id) {
-    el.href = "./rent?id=" + id;
+function changePropInfo (el, prop) {
+    el.href = "./rent?id=" + prop.id;
     el.children[0].children[0].src = prop.mainPhoto;
     el.children[1].children[0].children[0].innerHTML = prop.location;
     el.children[1].children[0].children[1].innerHTML = prop.ratingAvg + " <i class='fa-solid fa-star'></i>"

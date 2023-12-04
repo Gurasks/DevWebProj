@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="fs-6 bg-light">
+
+  <%- include('../partials/navbar'); %>
+
+    <div class="container">
+        <form action="/registerProperty" method="post">
+            <div class="input-group mb-2">
+                <span class="input-group-text" >Nome da residencia</span>
+                <input required name="title" type="text" class="form-control" aria-label="Nome da residencia input" aria-describedby="name">
+            </div>
+            <div class="input-group mb-2">
+                <span class="input-group-text" >Foto</span>
+                <input required name="mainPhoto" type="text" class="form-control" aria-label="Nome da residencia input" aria-describedby="name">
+            </div>
+            <div class="input-group mb-2">
+                <span class="input-group-text">Endereco</span>
+                <input required name="location" type="text" class="form-control" aria-label="Endereco input" aria-describedby="Endereco">
+            </div>
+            <div class="input-group mb-2">
+                <span class="input-group-text">Referencia</span>
+                <input required name="reference" type="text" class="form-control" aria-label="Endereco input" aria-describedby="Endereco">
+            </div>
+            <div class="input-group mb-2">
+                <span class="input-group-text">Maximo de hospedes</span>
+                <input required name="maxGuests" type="number" class="form-control" aria-label="Numero de quartos input" aria-describedby="numero-quartos">
+            </div>
+            <div class="input-group mb-2">
+                <span class="input-group-text">Numero de quartos</span>
+                <input required name="numRooms" type="number" class="form-control" aria-label="Numero de quartos input" aria-describedby="numero-quartos">
+            </div>
+            <div class="input-group mb-2">
+                <span class="input-group-text">Numero de banheiros</span>
+                <input required name="numBathrooms" type="number" class="form-control" aria-label="Numero de banheiros input" aria-describedby="numero-banheiros">
+            </div>
+            <div class="input-group mb-2">
+                <span class="input-group-text">Numero de camas</span>
+                <input required name="numBeds" type="number" class="form-control" aria-label="Numero de camas input" aria-describedby="numero-camas">
+            </div>
+            <div class="input-group mb-2">
+                <span class="input-group-text">Descricacao</span>
+                <textarea required name="description" rows="3" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"></textarea>
+            </div>
+            <div class="input-group mb-2">
+                <span class="input-group-text">Valor diaria</span>
+                <input required name="price" type="number" class="form-control" aria-label="Numero de camas input" aria-describedby="numero-camas">
+            </div>
+            <button type="submit" class="btn btn-danger float-end">Cadastrar</button>
+          </form>
+    </div>
+    <%- include('../partials/footer'); %>
+</body>
+</html>

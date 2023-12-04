@@ -6,6 +6,16 @@
                 <button class="btn btn-outline-secondary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form> -->
             <div class="d-flex gap-1">
+                <% if(typeof(user) != "undefined") { %>
+                    <% if(user.role) { %>
+                        <a href="/reservations"><label id="userPage" class="d-flex float-end btn btn-outline-light">Reservas</label></a><br>
+                    <% } if(user.role === "owner") { %>
+                        <a href="/myProperties"><label id="userPage" class="d-flex float-end btn btn-outline-light">Propriedades</label></a><br>
+                    <% } %>
+                <% } else { %>
+                    <a href="/login"></a><label id="userPage" class="d-flex float-end btn btn-outline-light">Entrar</label></a><br>
+                <% } %>
+
                 <label id="fontMinus" class="d-flex float-end btn btn-outline-light">A-</label><br>
                 <label id="fontPlus" class="d-flex float-end btn btn-outline-light">A+</label><br>
                 <label id="theme" class="d-flex float-end btn btn-outline-light">Claro</label><br>

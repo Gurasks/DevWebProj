@@ -1,7 +1,23 @@
-[
+{
+  "list": [
     {
-      "userid": 1,
-      "user": "luiz",
-      "password": "7f68cc69c5b2a57e22307f57ea2daf75d73c7c1bd67bd1dd24b2319677f488d63087f2f3ee9a8e3e041613603b37cd8d233855bfb026d5280100a4e3c19efc0d"
+      "id": "39c04ca0-f10d-4b88-a783-423b92206cd7",
+      "name": "asd",
+      "password": "17ca31644f4cf2a7be9e0ce3c999ade4c43ae2632a03d81793669e2a421626696496a1ab4870f3cd83854e34d65539383e8f1dd37c055484773f6ae69cea4fee",
+      "role": "owner",
+      "properties": [
+        "a9380a1f-f0ee-4f1b-870e-ec716f30b543"
+      ],
+      "reservations": [
+        {
+          "id": "0fbf6e14-824e-4a2c-8a1e-01a9dda5c7bc",
+          "userId": "39c04ca0-f10d-4b88-a783-423b92206cd7",
+          "propertyId": "1",
+          "propertyName": "Casa chic",
+          "checkin": "2023-12-20",
+          "checkout": "2023-12-28"
+        }
+      ]
     }
-]
+  ]
+}

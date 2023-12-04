@@ -11,17 +11,11 @@
         <div class="row">
             <div class="col">
                 <div class="content-spacing">
-                    <span class="title brand-black"><%= property.title %></span>
+                    <span id="propertyTitle" class="title brand-black"><%= property.title %></span>
                 </div>
 
                 <div class="cropped-rent">
-                    <img class="searching-img rounded-2" src="<%= property.mainPhoto %>" alt="Deer room">
-                </div>
-                <div class="cropped-rent">
-                    <img class="searching-img rounded-2" src="<%= property.photos[0] %>" alt="Cozy living room">
-                </div>
-                <div class="cropped-rent">
-                    <img class="searching-img rounded-2" src="<%= property.photos[1] %>" alt="NYC">
+                    <img class="searching-img rounded-2" src="<%= property.mainPhoto %>" alt="<%= property.title %>">
                 </div>
             </div>
 
@@ -37,22 +31,19 @@
                 <span class="brand-black"><%= property.description %></span>
             </div>
             <div class="col-4">
-                <form>
+                <form action="/reservation" method="POST">
+                    <input id="propertyId" type="hidden" name="propertyId" value="null" />
+                    <input id="propertyName" type="hidden" name="propertyName" value="null" />
                     <div class="input-group mb-2">
                         <span class="input-group-text" id="checkin">Check-In</span>
-                        <input id="checkin-date" type="date" class="form-control" aria-label="Check-In input" aria-describedby="CheckIn">
+                        <input required name="checkin" id="checkin-date" type="date" class="form-control" aria-label="Check-In input" aria-describedby="CheckIn">
                     </div>
                     <div class="input-group mb-2">
                         <span class="input-group-text" id="checkout">Checkout</span>
-                        <input id="checkout-date" type="date" class="form-control" aria-label="Checkout input" aria-describedby="Checkout">
-                    </div>
-
-                    <div class="input-group mb-2">
-                        <span class="input-group-text" id="hospedes">Hóspedes</span>
-                        <input id="guests" type="number" class="form-control" aria-label="Hóspedes input" aria-describedby="Hóspedes">
+                        <input required name="checkout" id="checkout-date" type="date" class="form-control" aria-label="Checkout input" aria-describedby="Checkout">
                     </div>
                     <div>
-                        <span class="fs-4 align-bottom brand-black">Diária R$<%= property.rentPrice %>,00</span>
+                        <span class="fs-4 align-bottom brand-black">Diária R$<%= property.price %>,00</span>
                         <button type="submit" class="btn btn-danger float-end">Reservar</button>
                     </div>
                 </form>
@@ -60,5 +51,6 @@
         </div>
     </div>
     <%- include('../partials/footer'); %>
+    <script src="assets/js/rent.js"></script>
 </body>
 </html>

@@ -19,6 +19,12 @@
             </div>
             <button id="login" class="btn btn-primary">Entrar</button>
             <button id="register" class="btn btn-secondary">Cadastrar</button>
+            <% if( typeof(error) != "undefined") { %>
+                <p><%= error %></p>
+            <% } %>
+            <% if( typeof(message) != "undefined") { %>
+                <p><%= message %></p>
+            <% } %>
           </form>
     </div>
     <%- include('../partials/footer'); %>
