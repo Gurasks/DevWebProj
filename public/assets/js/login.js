@@ -5,7 +5,7 @@ let passwordInput = document.querySelector("#passwordInput");
 login.addEventListener("click", loginReq);
 register.addEventListener("click", registerReq);
 
-function loginReq () {
+async function loginReq () {
     fetch("./login", {
     method: "POST",
     body: JSON.stringify({
@@ -20,7 +20,7 @@ function loginReq () {
   .then((json) => console.log(json));
 }
 
-function registerReq () {
+async function registerReq () {
     fetch("./register", {
     method: "POST",
     body: JSON.stringify({

@@ -12,7 +12,7 @@
           <div class="row">
               <% for(let j=i; j<i+3; j++) {%>
                 <div class="col">
-                  <a id="rent-<%= j %>" href="./rent?id=<%= j %>">
+                  <a id="rent-<%= j %>" href="./rent?id=<%= prop[j].id %>">
                       <div class="cropped">
                           <img class="searching-img rounded-2" src=<%= prop[j].mainPhoto %>>
                       </div>

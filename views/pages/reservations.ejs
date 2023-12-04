@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="fs-6 bg-light">
+
+  <%- include('../partials/navbar'); %>
+
+    <div class="container">
+        <% if(user.role === "default") {%>
+          <a href="./registerProperty" class="btn btn-primary">Quer começar a alugar?</a>
+        <% }%>
+        <ul>
+        <% for(let i=0; i<reservations.length; i++) {%>
+            <li><%= reservations[i].propertyName %> (<%= reservations[i].checkin %> - <%= reservations[i].checkout %>) <span id="<%= reservations[i].id %>" class="btn btn-danger btn-sm">Desmarcar</span></li>
+        <% } %>
+        </ul>
+    </div>
+    <%- include('../partials/footer'); %>
+    <script src="assets/js/reservations.js"></script>
+</body>
+</html>
