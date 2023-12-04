@@ -48,7 +48,6 @@ app.get('/', async function(req, res) {
   try {
     const response = await fetch('http://localhost:8081/properties', {
       method: "GET",
-      headers: { Authorization: user.token },
     });
     if (!response.ok) return res.render("pages/error", {user});
 

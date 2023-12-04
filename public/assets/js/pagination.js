@@ -34,7 +34,7 @@ function changePropInfo (el, prop) {
     el.children[1].children[0].children[0].innerHTML = prop.location;
     el.children[1].children[0].children[1].innerHTML = prop.ratingAvg + " <i class='fa-solid fa-star'></i>"
     el.children[1].children[1].innerHTML = prop.reference
-    el.children[1].children[2].innerHTML = "Diária R$" + prop.rentPrice + ",00"
+    el.children[1].children[2].innerHTML = "Diária R$" + prop.price + ",00"
 }
 
 function changeButtonVisibilities(currentPage) {

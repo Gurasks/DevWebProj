@@ -18,6 +18,33 @@
           "checkout": "2023-12-28"
         }
       ]
+    },
+    {
+      "id": "7ebc590c-3472-4f35-a76a-2c2b875b3a07",
+      "name": "yago vaz",
+      "password": "e7c79786927bb18d36309449e455367416426d464aa2994f052234a16eb639c284af31f6f955d7f3345f84163ebcbbf39dafe88d82c96a16aa461f394c353573",
+      "role": "owner",
+      "properties": [
+        "9eeb1d3d-6070-4f9e-a0ea-7de0f3b1196b"
+      ],
+      "reservations": [
+        {
+          "id": "512f07f0-c5fe-46af-bd15-8a18bd4228c0",
+          "userId": "7ebc590c-3472-4f35-a76a-2c2b875b3a07",
+          "propertyId": "5ef94ebe-056a-48b2-bb7f-87301a5de8c8",
+          "propertyName": "Casa chic",
+          "checkin": "2023-12-04",
+          "checkout": "2023-12-07"
+        }
+      ]
+    },
+    {
+      "id": "c05cec56-0919-4233-ab47-414cdcd04b0d",
+      "name": "asdf",
+      "password": "344de3aa9efaae1fb1c0eb8b4e3579bbedf42669385dda1d6d8f0387af927c72dd4e9e2914c845636b439c3f3d65bd13c8692c2f0983d4bb48bb276465badceb",
+      "role": "default",
+      "properties": [],
+      "reservations": []
     }
   ]
 }

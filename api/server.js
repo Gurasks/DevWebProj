@@ -161,7 +161,7 @@ app.post('/registerProperty', verifyJWT, function(req, res) {
         if (err) return res.status(500).json({ error: "Internal Server Error" });
         try {
             const properties = JSON.parse(data);
-            properties.prop.push({ id: propertyId, ...req.body })
+            properties.prop.push({ id: propertyId, ...req.body, ratingAvg: 4.8 })
             fs.writeFile(propertiesFilePath, JSON.stringify(properties, null, 2), "utf8", err => {
                 if (err) return res.status(500).json({ error: "Internal Server Error" });
             });
